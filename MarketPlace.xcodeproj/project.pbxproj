@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03A624290026FC3C8A1E60EC /* Pods_MarketPlace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75CC0640248F3DD64046B98 /* Pods_MarketPlace.framework */; };
 		35467223255E85A00033A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35467222255E85A00033A29D /* AppDelegate.swift */; };
 		35467225255E85A00033A29D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35467224255E85A00033A29D /* SceneDelegate.swift */; };
 		35467227255E85A00033A29D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35467226255E85A00033A29D /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		3546722B255E85A50033A29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3546722E255E85A50033A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35467230255E85A50033A29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4931D6ADB09CDD5254642DE5 /* Pods-MarketPlace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketPlace.release.xcconfig"; path = "Target Support Files/Pods-MarketPlace/Pods-MarketPlace.release.xcconfig"; sourceTree = "<group>"; };
+		B37F8B79C61812F292F30E99 /* Pods-MarketPlace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketPlace.debug.xcconfig"; path = "Target Support Files/Pods-MarketPlace/Pods-MarketPlace.debug.xcconfig"; sourceTree = "<group>"; };
+		C75CC0640248F3DD64046B98 /* Pods_MarketPlace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketPlace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A624290026FC3C8A1E60EC /* Pods_MarketPlace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				35467221255E85A00033A29D /* MarketPlace */,
 				35467220255E85A00033A29D /* Products */,
+				F9060D277E7F7A0246FF9D46 /* Pods */,
+				B89BFD684FE1AF79A2383D53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = MarketPlace;
 			sourceTree = "<group>";
 		};
+		B89BFD684FE1AF79A2383D53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C75CC0640248F3DD64046B98 /* Pods_MarketPlace.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9060D277E7F7A0246FF9D46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B37F8B79C61812F292F30E99 /* Pods-MarketPlace.debug.xcconfig */,
+				4931D6ADB09CDD5254642DE5 /* Pods-MarketPlace.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35467233255E85A50033A29D /* Build configuration list for PBXNativeTarget "MarketPlace" */;
 			buildPhases = (
+				EEBABFA5EE1753E6B717AB7F /* [CP] Check Pods Manifest.lock */,
 				3546721B255E85A00033A29D /* Sources */,
 				3546721C255E85A00033A29D /* Frameworks */,
 				3546721D255E85A00033A29D /* Resources */,
+				D00F1EE8590FC205192FEFF5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D00F1EE8590FC205192FEFF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketPlace/Pods-MarketPlace-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketPlace/Pods-MarketPlace-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarketPlace/Pods-MarketPlace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEBABFA5EE1753E6B717AB7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketPlace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3546721B255E85A00033A29D /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		35467234255E85A50033A29D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B37F8B79C61812F292F30E99 /* Pods-MarketPlace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		35467235255E85A50033A29D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4931D6ADB09CDD5254642DE5 /* Pods-MarketPlace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
